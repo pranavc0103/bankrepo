@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>new page</title>
+</head>
+<body style="background-color:FireBrick;text-align:center">
+<h3>Click the button to update details</h3>
+<form action="login" method="post" >
+  {% csrf_token %}
+    <button style="font-size:20px" onclick="location.href='form'" type="button">update</button>
+</form>
+</body>
+</html>

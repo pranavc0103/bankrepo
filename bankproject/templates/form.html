@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>form</title>
+</head>
+<body style="background-color:DodgerBlue;text-align:center">
+<h2>Form</h2>
+
+<form action="messagepage" method="post">
+  {% csrf_token %}
+  <input type="text" name="name" placeholder="enter your full name" vspace="5px"><br>
+  <label>DOB:</label>
+  <input type="date" name="DOB" placeholder="enter your DOB" vspace="5px"><br>
+  <input type="number" name="age" placeholder="enter your age" vspace="5px"><br>
+  <input type="text" name="gender" placeholder="enter your gender" vspace="5px"><br>
+  <input type="number" name="mobile" placeholder="enter mobile number" vspace="5px"><br>
+  <input type="email" name="email" placeholder="enter your email" vspace="5px"><br>
+  <input type="text" name="address" placeholder="enter your address" vspace="5px"><br><br>
+
+<label for="branch">Choose your branch:</label>
+<select name="branch" id="branch">
+<optgroup label="Kannur">
+  <option value="thalassery">Thalassery</option>
+  <option value="payyanur">Payyannur</option>
+</optgroup>
+<optgroup label="Calicut">
+  <option value="beach" selected>Beach road</option>
+  <option value="mananchira">Mananchira</option>
+</optgroup>
+<optgroup label="Trissur">
+  <option value="vadakanchery">Vadakanchery</option>
+  <option value="palissery">Palissery</option>
+</optgroup>
+<optgroup label="Ernakulam">
+  <option value="edappaly" selected>Edappaly</option>
+  <option value="aluva">Aluva</option>
+</optgroup>
+<optgroup label="Wayanad">
+  <option value="batheri" selected>Batheri</option>
+  <option value="kalpetta">Kalpetta</option>
+</optgroup>
+</select>
+
+
+<label for="account">Account type:</label>
+<select name="account" id="account">
+    <option value="current">Savings</option>
+  <option value="current">Current</option>
+</select>
+<!--</form>-->
+<br>
+<!--<form action="messagepage" method="post">-->
+<!--  {% csrf_token %}-->
+  <label>Materials provided:</label>
+  <input type="checkbox" id="debitcard" name="debitcard" value="debitcard">
+  <label for="debitcard">debit card</label>
+  <input type="checkbox" id="creditcard" name="creditcard" value="creditcard">
+  <label for="creditcard">credit card</label>
+  <input type="checkbox" id="chequebook" name="chequebook" value="chequebook">
+  <label for="chequebook">cheque book</label><br><br><br>
+  <input type="submit" value="Submit" style="background-color:green"><br><br>
+  <button type="button"  style="background-color:red" onclick="location.href='login'">Logout</button>
+</form>
+</body>
+</html>
+
